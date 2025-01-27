@@ -70,7 +70,7 @@ export default {
 		  IBMPlex: ["var(--font-ibm-plex)"],
 		},
 		backgroundImage: {
-		  "purple-gradient": "url('/assets/images/gradient-bg.svg')",
+		  "purple-gradient": "url('/assets/images/new-gradient-bg.svg')",
 		  banner: "url('/assets/images/banner-bg.png')",
 		},
 		borderRadius: {
