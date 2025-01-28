@@ -7,10 +7,10 @@ interface MongooseConnection {
   promise: Promise<Mongoose> | null;
 }
 
-let cached: MongooseConnection = (global as any).mongoose
+let cached: MongooseConnection = (global as any).mongoose  // eslint-disable-line @typescript-eslint/no-explicit-any
 
 if(!cached) {
-  cached = (global as any).mongoose = { 
+  cached = (global as any).mongoose = {  // eslint-disable-line @typescript-eslint/no-explicit-any
     conn: null, promise: null 
   }
 }
