@@ -1,4 +1,3 @@
-/* eslint-disable camelcase */
 import { clerkClient } from "@clerk/nextjs/server";
 import { WebhookEvent } from "@clerk/nextjs/server";
 import { headers } from "next/headers";
@@ -28,7 +27,7 @@ export async function POST(req: Request) {
   try {
     payload = await req.json();
   } catch (error) {
-    return NextResponse.json({ error: "Invalid JSON payload" }, { status: 400 });
+    return NextResponse.json({ error: "Invalid JSON payload "+ error }, { status: 400 });
   }
 
   const body = JSON.stringify(payload);
